@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>jQuery Tilted Page Scroll by Pete R. | The Pete Design</title>
+	<title>Health Booklet</title>
 	<meta name="title" content="jQuery One Page Scroll by Pete R. | The Pete Design" />
 	<meta name="description" content="Create a beautiful 3D tilted effect on scroll with jQuery Tilted Page Scroll plugin by Pete Rojwongsuriya" />
 	<link rel="image_src" href="/images/tiltedpage_scroll_image.png" />
@@ -202,6 +202,11 @@
       float: left;
       width: 100%;
     }
+    td{
+      margin: 10%;
+      padding:10%;
+
+    }
     .credit a {
       text-decoration: none;
       font-weight: bold;
@@ -309,25 +314,57 @@
     }
     
     .tps-section:nth-child(1n+1) .tps-wrapper {
-      background: url(demo1.jpg) center center;
+      background: url("https://media.istockphoto.com/vectors/vector-white-background-vector-id1191184417?k=20&m=1191184417&s=612x612&w=0&h=r4jPg1Sb_g6f03gqBL8EBeRadza5vinqzLmNCQbkSOg=") center center;
       background-size: cover;
     }
     
     .tps-section:nth-child(2n+1) .tps-wrapper {
-      background:  url(demo2.jpg) center center;
+      background:  url("https://media.istockphoto.com/vectors/vector-white-background-vector-id1191184417?k=20&m=1191184417&s=612x612&w=0&h=r4jPg1Sb_g6f03gqBL8EBeRadza5vinqzLmNCQbkSOg=") center center;
       background-size: cover;
     }
     
     .tps-section:nth-child(3n+1) .tps-wrapper {
-      background:  url(demo3.jpg) center center;
+      background:  url("https://media.istockphoto.com/vectors/vector-white-background-vector-id1191184417?k=20&m=1191184417&s=612x612&w=0&h=r4jPg1Sb_g6f03gqBL8EBeRadza5vinqzLmNCQbkSOg=") center center;
       background-size: cover;
     }
     
     .tps-section:nth-child(4n+1) .tps-wrapper {
-      background:  url(demo4.jpg) center center;
+      background:  url("https://media.istockphoto.com/vectors/vector-white-background-vector-id1191184417?k=20&m=1191184417&s=612x612&w=0&h=r4jPg1Sb_g6f03gqBL8EBeRadza5vinqzLmNCQbkSOg=") center center;
       background-size: cover;
     }
+    .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
     
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
     .header {
       overflow: hidden;
       clear: both;
@@ -341,47 +378,13 @@ body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 12px; color: #333; }
 body .one .bsa_it_p { display: none; }
 body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; margin: 12px 15px 0; text-align: center; }
 
-.ads {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  z-index: 99;
-  text-align: center;
-  max-width: 200px;
-}
 
-.ads a {
-  color: black;
-}
 
-.ad-header {
-  margin: 0 0 -2px 0px;
-  background: white;
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-.ad-header a {
-  float: right;
-  border-left: 1px solid #f3f3f3;
-  padding:10px;
-  line-height: 100%;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-}
-.ad-header a:hover {
-  background: #eee;
-}
 
-.ads .promo {
-  position: absolute;
-  top: -195px;
-  left: 0;
-}
+
+
+
+
 
 .message {
   max-width: 550px;
@@ -436,71 +439,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 .socials .twitter-share-button {
   width: 85px  !important;
 }
-	  
-#carbonads {
-  --width: 180px;
-  --font-size: 14px;
-}
-
-#carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: block;
-  overflow: hidden;
-  margin-bottom: 20px;
-  max-width: var(--width);
-  border-radius: 4px;
-  text-align: center;
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .1);
-  background-color: hsl(0, 0%, 98%);
-  font-size: var(--font-size);
-  line-height: 1.5;
-}
-
-#carbonads a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#carbonads a:hover {
-  color: inherit;
-}
-
-#carbonads span {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.carbon-img {
-  display: block;
-  margin-bottom: 8px;
-  max-width: var(--width);
-  line-height: 1;
-}
-
-.carbon-img img {
-  display: block;
-  margin: 0 auto;
-  max-width: var(--width) !important;
-  width: var(--width);
-  height: auto;
-}
-
-.carbon-text {
-  display: block;
-  padding: 0 1em 8px;
-}
-
-.carbon-poweredby {
-  display: block;
-  padding: 10px var(--font-size);
-  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  font-weight: 600;
-  font-size: 9px;
-  line-height: 0;
-}
+	
 
 @media only screen and (min-width: 320px) and (max-width: 759px) {
   #carbonads {
@@ -550,64 +489,685 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
   <body>
     
       <div class="wrapper">	
-        <!-- AdPacks.com Zone Code -->
-    <div class="ads">
-    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYI5KJE&placement=wwwthepetedesigncom" id="_carbonads_js"></script>
-    </div>
-    <!-- End AdPacks.com Zone Code -->
+        
   	  <div class="main">
 	    <div class="header">
-        <h1>jQuery Tilted Page Scroll</h1>
-        <h2>Create a 3D Tilted Scroll Effect with jQuery Tilted Page Scroll Plugin</h2>
-        <p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.travelistly.com" target="_blank">Travelistly</a> and <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p>
-        <div class="btns">
-  	      <a class="reload btn" href="https://github.com/peachananr/flipping_gallery">Download on Github</a>
+        <h1>BMI AND CALORIE CHART</h1>
+        
+         <div class="btns">
+  	      <a class="reload btn" href="http://127.0.0.1:8000/">Back</a>
   	    </div>
   	  </div>
   	  <section class="page1">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/visit-sydney-australia-95861" target="_blank">Travel to Sydney, Australia<br><small>Completed on 14 Feb 2014</small></a></h1>
+          <h4>OPTIMUM BODY WEIGHT CHART</h4>
+         
+
+          <h5><b>HEIGHT     v/s     AGE IN YEARS</b></h5>
+          <h5 style="text-align:left">FOR INDIAN FEMALES</h5>
+         <center>
+          <table class="styled-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>20</th>
+                    <th>25</th>
+                    <th>30</th>
+                    <th>35</th>
+                    <th>40</th>
+                    <th>45</th>
+                    <th>50</th>
+                  </tr>
+                <tr>
+                  <th>CM</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                </tr>
+            </thead>
+            
+                <tbody>
+                <tr class="active-row">
+                    <td>148</td>
+                    <td>42.7</td>
+                    <td>44.2</td>
+                    <td>46.2</td>
+                    <td>47.6</td>
+                    <td>48.8</td>
+                    <td>50.9</td>
+                    <td>50.9</td>
+                    
+                </tr>
+                <tr class="active-row">
+                  <td>150</td>
+                  <td>43.6</td>
+                  <td>44.9</td>
+                  <td>46.9</td>
+                  <td>48.5</td>
+                  <td>49.7</td>
+                  <td>50.8</td>
+                  <td>51.5</td>
+                  
+              </tr>
+              <tr class="active-row">
+                <td>153</td>
+                <td>45.4</td>
+                <td>47.0</td>
+                <td>49.0</td>
+                <td>50.4</td>
+                <td>51.7</td>
+                <td>52.3</td>
+                <td>53.5</td>
+                
+            </tr>
+              <tr class="active-row">
+                <td>155</td>
+                <td>46.3</td>
+                <td>48.1</td>
+                <td>49.9</td>
+                <td>51.5</td>
+                <td>52.7</td>
+                <td>53.5</td>
+                <td>54.2</td>
+                
+            </tr>
+
+        <tr class="active-row">
+          <td>158</td>
+          <td>48.6</td>
+          <td>50.0</td>
+          <td>52.0</td>
+          <td>53.5</td>
+          <td>54.5</td>
+          <td>55.7</td>
+          <td>56.3</td>
+          
+      </tr>
+
+   
+
+
+
+            </tbody>
+        </table>
+      </center>
         </div>
       </section>
   	  <section class="page2">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/visit-uluru-ayers-rock-96722" target="_blank">Visit Uluru (Ayers Rock), Australia<br><small>Completed on 17 Feb 2014</small></a></h1>
+         
+		<h4>OPTIMUM BODY WEIGHT CHART FOR FEMALES</h4>
+         
+
+          <h5><b>HEIGHT     v/s     AGE IN YEARS</b></h5>
+         <center>
+          <table class="styled-table">
+            <tr class="active-row">
+              <td>160</td>
+              <td>49.7</td>
+              <td>51.1</td>
+              <td>53.1</td>
+              <td>54.7</td>
+              <td>55.6</td>
+              <td>58.5</td>
+              <td>59.4</td>
+              
+          </tr>
+            <tr class="active-row">
+              <td>163</td>
+              <td>51.1</td>
+              <td>52.7</td>
+              <td>54.9</td>
+              <td>56.3</td>
+              <td>57.6</td>
+              <td>58.5</td>
+              <td>59.4</td>
+              
+            </tr>
+            
+            <tr class="active-row">
+              <td>165</td>
+              <td>53.1</td>
+              <td>54.7</td>
+              <td>56.9</td>
+              <td>58.5</td>
+              <td>59.7</td>
+              <td>60.6</td>
+              <td>62.0</td>
+              
+            </tr>
+            
+            <tr class="active-row">
+              <td>168</td>
+              <td>54.0</td>
+              <td>56.3</td>
+              <td>58.1</td>
+              <td>60.1</td>
+              <td>61.5</td>
+              <td>62.4</td>
+              <td>63.7</td>
+              
+            </tr>
+            
+            <tr class="active-row">
+              <td>170</td>
+              <td>56.5</td>
+              <td>57.9</td>
+              <td>60.3</td>
+              <td>62.2</td>
+              <td>63.7</td>
+              <td>64.7</td>
+              <td>65.8</td>
+              
+            </tr>
+            
+            <tr class="active-row">
+              <td>173</td>
+              <td>58.1</td>
+              <td>60.1</td>
+              <td>62.2</td>
+              <td>64.0</td>
+              <td>65.8</td>
+              <td>67.0</td>
+              <td>68.3</td>
+              
+            </tr>
+            
+            <tr class="active-row">
+              <td>175</td>
+              <td>60.1</td>
+              <td>62.2</td>
+              <td>64.2</td>
+              <td>66.0</td>
+              <td>68.1</td>
+              <td>69.7</td>
+              <td>71.0</td>
+              
+            </tr>
+
+            </tbody>
+        </table>
+      </center>
         </div>
       </section>
   	  <section class="page3">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/travel-to-zhangjiajie-avatar-s-mountains-china-85798" target="_blank">Travel to ZhangJiaJie (Avatar's Mountain) in China<br><small>Completed on 20 Jan 2014</small></a></h1>
-        </div>
+          <h5 >FOR INDIAN MALES</h5>
+          <center>
+            <table class="styled-table">
+              <thead>
+                <tr>
+                    <th></th>
+                    <th>20</th>
+                    <th>25</th>
+                    <th>30</th>
+                    <th>35</th>
+                    <th>40</th>
+                    <th>45</th>
+                    <th>50</th>
+                  </tr>
+                <tr>
+                  <th>CM</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                </tr>
+            </thead>
+            
+                <tbody>
+                <tr class="active-row">
+                    <td>148</td>
+                    <td>38.6</td>
+                    <td>41.0</td>
+                    <td>42.6</td>
+                    <td>44.0</td>
+                    <td>45.1</td>
+                    <td>46.3</td>
+                    <td>47.1</td>
+                    
+                </tr>
+                <tr class="active-row">
+                  <td>150</td>
+                  <td>40.3</td>
+                  <td>41.6</td>
+                  <td>43.5</td>
+                  <td>44.8</td>
+                  <td>46.0</td>
+                  <td>47.0</td>
+                  <td>47.7</td>
+                  
+              </tr>
+              <tr class="active-row">
+                <td>153</td>
+                <td>41.9</td>
+                <td>43.5</td>
+                <td>45.3</td>
+                <td>46.6</td>
+                <td>47.9</td>
+                <td>48.4</td>
+                <td>49.5</td>
+                
+            </tr>
+              <tr class="active-row">
+                <td>155</td>
+                <td>42.8</td>
+                <td>44.3</td>
+                <td>46.2</td>
+                <td>47.7</td>
+                <td>48.8</td>
+                <td>49.4</td>
+                <td>50.5</td>
+                
+            </tr>
+
+        <tr class="active-row">
+          <td>158</td>
+          <td>44.9</td>
+          <td>46.3</td>
+          <td>48.1</td>
+          <td>49.5</td>
+          <td>50.4</td>
+          <td>51.6</td>
+          <td>52.2</td>
+          
+      </tr>
+
+    <tr class="active-row">
+      <td>160</td>
+      <td>46.0</td>
+      <td>47.3</td>
+      <td>49.1</td>
+      <td>50.6</td>
+      <td>51.5</td>
+      <td>52.1</td>
+      <td>53.0</td>
+      
+  </tr>
+
+<tr class="active-row">
+  <td>163</td>
+  <td>47.3</td>
+  <td>48.8</td>
+  <td>50.8</td>
+  <td>52.1</td>
+  <td>52.3</td>
+  <td>54.1</td>
+  <td>54.9</td>
+  
+</tr>
+
+                    </table>
+                    </center>
+		    </div>
       </section>
   	  <section class="page4">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/ride-a-camel-93541" target="_blank">Ride a Camel in the Australian Outback<br><small>Completed on 17 Feb 2014</small></a></h1>
-        </div>
+          
+          <center>
+            <table class="styled-table">
+              <thead>
+                <tr>
+                    <th></th>
+                    <th>20</th>
+                    <th>25</th>
+                    <th>30</th>
+                    <th>35</th>
+                    <th>40</th>
+                    <th>45</th>
+                    <th>50</th>
+                  </tr>
+                <tr>
+                  <th>CM</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                  <th>Kg.</th>
+                </tr>
+            </thead>
+                
+<tr class="active-row">
+  <td>165</td>
+  <td>48.1</td>
+  <td>50.6</td>
+  <td>52.6</td>
+  <td>54.1</td>
+  <td>55.3</td>
+  <td>56.0</td>
+  <td>57.3</td>
+  
+</tr>
+
+<tr class="active-row">
+  <td>168</td>
+  <td>50.0</td>
+  <td>52.1</td>
+  <td>53.8</td>
+  <td>55.6</td>
+  <td>56.8</td>
+  <td>57.7</td>
+  <td>59.0</td>
+  
+</tr>
+                </thead>
+                </table>
+                </center>
+          
+          </div>
       </section>
   	  <section class="page5">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/visit-sydney-australia-95861" target="_blank">Travel to Sydney, Australia<br><small>Completed on 14 Feb 2014</small></a></h1>
-        </div>
+          <h3>CALORIE COUNTER</h3>
+          <center>
+            <table class="styled-table">
+              <thead>
+                      <th colspan="2">Calories</th>
+                      <th colspan="2">Calories</th>
+                      <th colspan="2">Calories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="active-row">
+                    <td>Green Beans</td>
+                    <td>30</td>
+                    <td>Lichis</td>
+                    <td>61</td>
+                    <td colspan="2"><i><u>SNACKS/SAVOURIES</u></i></td>
+                  </tr>
+                <tr class="active-row">
+                      <td>Peas Canned</td>
+                      <td>145</td>
+                      <td>Water Melon</td>
+                      <td>21</td>
+                      <td>Chakali</td>
+                      <td>550</td>    
+                  </tr>
+                  <tr class="active-row">
+                    <td>Peas Fresh</td>
+                    <td>115</td>
+                    <td colspan="2"><i><u>BISCUITS AND CAKES</u></i></td>
+                    <td>Chat</td>
+                    <td>474</td>  
+                </tr>
+                <tr class="active-row">
+                  <td colspan="2"><i><u>MEAT PRODUCTS</u></i></td>
+                  <td>Biscuits(salted)</td>
+                  <td>15</td>
+                  <td>Chewera</td>
+                  <td>420</td> 
+              </tr>
+                <tr class="active-row">
+                  <td>Egg</td>
+                  <td>56</td>
+                  <td>Biscuits(sweet)</td>
+                  <td>24</td>
+                  <td>Dal Vada</td>
+                  <td>200</td> 
+              </tr>
+  
+          <tr class="active-row">
+            <td>Chicken Broiler</td>
+            <td>151</td>
+            <td>Cake Peices and Chocolates</td>
+            <td>165</td>
+            <td>Matthi</td>
+            <td>420</td>
+        </tr>
+  
+      <tr class="active-row">
+        <td>Mutton</td>
+        <td>194</td>
+        <td colspan="2"><i><u>SWEETS</u></i></td>
+        <td>Namak Para</td>
+        <td>583</td>
+    </tr>
+  
+  
+  
+              </tbody>
+          </table>
+        </center>
+    
+         </div>
       </section>
   	  <section class="page6">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/visit-uluru-ayers-rock-96722" target="_blank">Visit Uluru (Ayers Rock), Australia<br><small>Completed on 17 Feb 2014</small></a></h1>
-        </div>
+         
+          <center>
+            <table class="styled-table">
+              <thead>
+                      <th colspan="2">Calories</th>
+                      <th colspan="2">Calories</th>
+                      <th colspan="2">Calories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active-row">
+                      <td>Banana</td>
+                      <td>100</td>
+                      <td>Kheer</td>
+                      <td>182</td>
+                      <td>Potato Chips</td>
+                      <td>110</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Mango</td>
+                      <td>74</td>
+                      <td>Srikhand</td>
+                      <td>262</td>
+                      <td>Sev</td>
+                      <td>650</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Cherry</td>
+                      <td>70</td>
+                      <td>Carrot Halwa</td>
+                      <td>334</td>
+                      <td>Bhel</td>
+                      <td>220</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Chikku</td>
+                      <td>94</td>
+                      <td>Gulab Jamun</td>
+                      <td>100</td>
+                      <td>Beer</td>
+                      <td>325</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Dates Dried</td>
+                      <td>283</td>
+                      <td>Jalebi</td>
+                      <td>412</td>
+                      <td colspan="2"><i><u>VEGETABLES</u></i></td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Guava</td>
+                      <td>51</td>
+                      <td>Nan Khatai</td>
+                      <td>484</td>
+                      <td>Cabbage</td>
+                      <td>27</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Grapes</td>
+                      <td>45</td>
+                      <td>Rasgulla Small</td>
+                      <td>100</td>
+                      <td>Methi</td>
+                      <td>49</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td colspan="2"><i><u>CEREAL AND CEREAL PRODUCTS</u></i></td>
+                      <td>Green Beans</td>
+                      <td>30</td>
+                      <td>Mustard</td>
+                      <td>34</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Cornflakes 1 cup</td>
+                      <td>95</td>
+                      <td colspan="2"><i><u>SUGAR</u></i></td>
+                      <td>Spinach</td>
+                      <td>26</td>
+                    </tr>
+                   
+                    
+                    </tbody>
+                    </table>
+         </div>
       </section>
   	  <section class="page7">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/travel-to-zhangjiajie-avatar-s-mountains-china-85798" target="_blank">Travel to ZhangJiaJie (Avatar's Mountain) in China<br><small>Completed on 20 Jan 2014</small></a></h1>
+          
+          <center>
+            <table class="styled-table">
+              <thead>
+                      <th colspan="2">Calories</th>
+                      <th colspan="2">Calories</th>
+                      <th colspan="2">Calories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active-row">
+                      <td>Popcorn</td>
+                      <td>170</td>
+                      <td>Gur</td>
+                      <td>57</td>
+                      <td>Carrots</td>
+                      <td>48</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Rice Boiled</td>
+                      <td>70</td>
+                      <td>Sugar 1 Teaspoon</td>
+                      <td>16</td>
+                      <td>Onion</td>
+                      <td>50</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Suji</td>
+                      <td>348</td>
+                      <td>Sugar 1 Big spoon</td>
+                      <td>48</td>
+                      <td>Potato</td>
+                      <td>97</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Chapati</td>
+                      <td>100</td>
+                      <td>Honey 10gms</td>
+                      <td>32</td>
+                      <td>Torai</td>
+                      <td>12</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>One Slice Of Bread</td>
+                      <td>60</td>
+                      <td colspan="2"><i><u>BEVERAGES</u></i></td>
+                      <td>Brinjal</td>
+                      <td>24</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Parantha</td>
+                      <td>275</td>
+                      <td>Buffalo's Milk</td>
+                      <td>175</td>
+                      <td>Cauliflower</td>
+                      <td>30</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Butter on Toast</td>
+                      <td>170</td>
+                      <td>Cow's Milk</td>
+                      <td>100</td>
+                      <td>Green Chilli</td>
+                      <td>29</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>Rice Flakes</td>
+                      <td>110</td>
+                      <td>Curd</td>
+                      <td>60</td>
+                      <td>Ladies Finger</td>
+                      <td>35</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td colspan="2"><i><u>PULSES</u></i></td>
+                      <td>Sugarless Coffee</td>
+                      <td>25</td>
+                      <td>Garlic</td>
+                      <td>145</td>
+                    </tr>
+                    
+                    </tbody>
+                    </table>
+                    </center>
+                    
         </div>
       </section>
   	  <section class="page8">
         <div class="page_container">
-          <h1><a href="http://www.bucketlistly.com/achievements/ride-a-camel-93541" target="_blank">Ride a Camel in the Australian Outback<br><small>Completed on 17 Feb 2014</small></a></h1>
+        
+        <center>
+          <table class="styled-table">
+            <thead>
+                    <th colspan="2">Calories</th>
+                    <th colspan="2">Calories</th>
+                    <th colspan="2">Calories</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active-row">
+                    <td>Moong</td>
+                    <td>348</td>
+                    <td>Sugarless Tea</td>
+                    <td>22</td>
+                    <td>Tinda</td>
+                    <td>21</td>
+                  </tr>
+                  <tr class="active-row">
+                    <td>Chana Dal</td>
+                    <td>372</td>
+                    <td>Cola</td>
+                    <td>80</td>
+                    <td>Baked Beans</td>
+                    <td>320</td>
+                  </tr>
+                  <tr class="active-row">
+                    <td colspan="2"><i><u>FRESH FRUITS</u></i></td>
+                    <td>Burfi(small)</td>
+                    <td>100</td>
+                    <td>Pakoda</td>
+                    <td>200</td>
+                  </tr>
+                  
+                  <tr class="active-row">
+                    <td>Apple</td>
+                    <td>56</td>
+                    <td>Bhujia</td>
+                    <td>500</td>
+                    <td>Samosa</td>
+                    <td>28</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </center>
         </div>
       </section>
+      
     </div>
-    <a class="back" href="http://www.thepetedesign.com/#design">Back to The Pete Design</a>
-    <a href="https://github.com/peachananr/tiltedpage-scroll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-  </div>
+   </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11278966-3"></script>
 <script>
